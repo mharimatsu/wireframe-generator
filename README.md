@@ -28,6 +28,7 @@ design-system03/
 ├── wireframe-demo.html               # デモ・使用例ページ
 ├── README.md                         # このファイル
 ├── IMPROVEMENTS.md                   # 機能改善項目リスト
+├── IMPROVEMENTS_DETAIL.md            # 機能改善項目詳細仕様書
 ├── COMPONENT_MAPPING_RULES.md        # コンポーネントマッピングルール
 └── AI_MAPPING_PROMPT.md              # AIマッピングプロンプト
 ```
