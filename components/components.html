@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>デザインシステムコンポーネントライブラリ</title>
+    <link rel="stylesheet" href="../styles/components.css">
+</head>
+<body>
+    <div class="ds-container">
+        <h1 class="ds-title">デザインシステムコンポーネントライブラリ</h1>
+
+        <!-- Navigation -->
+        <nav class="ds-navigation">
+            <div class="ds-navigation__container">
+                <div class="ds-navigation__category">
+                    <span class="ds-navigation__category-title">🏗️ レイアウト</span>
+                    <a href="#main-visual-components">Main Visual</a>
+                    <a href="#header-components">Header</a>
+                    <a href="#navigation-components">Navigation</a>
+                    <a href="#local-navigation-components">Local Nav</a>
+                </div>
+
+                <div class="ds-navigation__category">
+                    <span class="ds-navigation__category-title">📝 コンテンツ</span>
+                    <a href="#text-components">Text</a>
+                    <a href="#card-components">Card</a>
+                    <a href="#text-card-components">Text Card</a>
+                    <a href="#table-components">Table</a>
+                    <a href="#list-components">List</a>
+                </div>
+
+                <div class="ds-navigation__category">
+                    <span class="ds-navigation__category-title">🎯 インタラクション</span>
+                    <a href="#button-components">Button</a>
+                    <a href="#faq-components">FAQ</a>
+                    <a href="#step-components">Step</a>
+                    <a href="#info-step-components">Info Step</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 🏗️ レイアウト・構造系 -->
+        <section class="ds-category">
+            <h1 class="ds-category__title">🏗️ レイアウト・構造系</h1>
+
+            <!-- Main Visual Components -->
+            <section class="ds-section" id="main-visual-components">
+            <h2 class="ds-section__title">Main Visual Components</h2>
+
+            <!-- Mainvisual_01 -->
+            <div class="ds-component">
+                <h3 class="ds-component__name">Mainvisual_01</h3>
+                <div class="ds-component__preview">
+                    <div class="c-mainvisual c-mainvisual--01">
+                        <div class="c-mainvisual__content">
+                            <div class="c-hgroup">
+                                <div class="c-hgroup__english">English</div>
+                                <div class="c-hgroup__main">
+                                    <h1 class="c-hgroup__title">日本語見出し</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <!-- Header Components -->
+            <section class="ds-section" id="header-components">
+            <h2 class="ds-section__title">Header Components</h2>
+
+            <!-- head/c-hgroup -->
+            <div class="ds-component">
+                <h3 class="ds-component__name">head/c-hgroup</h3>
+                <div class="ds-component__preview">
+                    <div class="c-hgroup">
+                        <div class="c-hgroup__english">English</div>
+                        <div class="c-hgroup__main">
+                            <h1 class="c-hgroup__title">日本語見出し</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- c-underline-duotone-head -->
+            <div class="ds-component">
+                <h3 class="ds-component__name">c-underline-duotone-head</h3>
+                <div class="ds-component__preview">
+                    <div class="c-underline-duotone-head">
+                        <h2 class="c-underline-duotone-head__text">見出しテキストが入ります</h2>
+                        <div class="c-underline-duotone-head__underline"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- c-mark-head -->
+            <div class="ds-component">
+                <h3 class="ds-component__name">c-mark-head</h3>
+                <div class="ds-component__preview">
+                    <div class="c-mark-head">
+                        <div class="c-mark-head__marker"></div>
+                        <h3 class="c-mark-head__text">見出しテキストが入ります</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- c-中見出し -->
+            <div class="ds-component">
+                <h3 class="ds-component__name">c-中見出し</h3>
+                <div class="ds-component__preview">
+                    <h2 class="c-heading c-heading--x2l">見出しテキスト</h2>
+                    <h2 class="c-heading c-heading--x3l">見出しテキスト</h2>
+                    <h2 class="c-heading c-heading--x4l">見出しテキスト</h2>
+                    <h2 class="c-heading c-heading--x5l">見出しテキスト</h2>
+                    <h2 class="c-heading c-heading--x6l">見出しテキスト</h2>
+                </div>
+            </div>
+            </section>
+
+            <section class="ds-section" id="navigation-components">
+                <h2 class="ds-section__title">Navigation Components</h2>
+
+                <!-- nav/c-anchor-buttons -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">nav/c-anchor-buttons</h3>
+                    <div class="ds-component__preview">
+                        <nav class="c-anchor-buttons">
+                            <div class="c-anchor-buttons__row">
+                                <button class="c-anchor-btn">
+                                    <span class="c-anchor-btn__text">ご挨拶</span>
+                                    <div class="c-anchor-btn__arrow">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" transform="rotate(90)">
+                                            <path d="M6 4L10 8L6 12" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </button>
+                                <button class="c-anchor-btn">
+                                    <span class="c-anchor-btn__text">会社概要</span>
+                                    <div class="c-anchor-btn__arrow">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" transform="rotate(90)">
+                                            <path d="M6 4L10 8L6 12" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </button>
+                                <button class="c-anchor-btn">
+                                    <span class="c-anchor-btn__text">営業所</span>
+                                    <div class="c-anchor-btn__arrow">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" transform="rotate(90)">
+                                            <path d="M6 4L10 8L6 12" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </button>
+                                <button class="c-anchor-btn">
+                                    <span class="c-anchor-btn__text">グループについて</span>
+                                    <div class="c-anchor-btn__arrow">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" transform="rotate(90)">
+                                            <path d="M6 4L10 8L6 12" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="c-anchor-buttons__row">
+                                <button class="c-anchor-btn">
+                                    <span class="c-anchor-btn__text">ダミーテキスト</span>
+                                    <div class="c-anchor-btn__arrow">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" transform="rotate(90)">
+                                            <path d="M6 4L10 8L6 12" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </button>
+                                <button class="c-anchor-btn">
+                                    <span class="c-anchor-btn__text">ダミーテキスト</span>
+                                    <div class="c-anchor-btn__arrow">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" transform="rotate(90)">
+                                            <path d="M6 4L10 8L6 12" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </button>
+                                <button class="c-anchor-btn">
+                                    <span class="c-anchor-btn__text">ダミーテキスト</span>
+                                    <div class="c-anchor-btn__arrow">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" transform="rotate(90)">
+                                            <path d="M6 4L10 8L6 12" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </button>
+                                <button class="c-anchor-btn">
+                                    <span class="c-anchor-btn__text">福利厚生・各種制度</span>
+                                    <div class="c-anchor-btn__arrow">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" transform="rotate(90)">
+                                            <path d="M6 4L10 8L6 12" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Local Navigation Components -->
+            <section class="ds-section" id="local-navigation-components">
+                <h2 class="ds-section__title">Local Navigation Components</h2>
+
+                <!-- c-localav -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">c-localav</h3>
+                    <div class="ds-component__preview">
+                        <div class="c-localav">
+                            <div class="c-localav__heading">
+                                <h2 class="c-heading c-heading--x4l">見出しテキストが入ります</h2>
+                            </div>
+                            <div class="c-localav__links">
+                                <div class="c-localav__row">
+                                    <div class="c-localav__item">
+                                        <div class="c-localav__english">ENGLISH</div>
+                                        <div class="c-localav__text">ダミーテキスト</div>
+                                        <div class="c-localav__arrow">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M6 4L10 8L6 12" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="c-localav__item">
+                                        <div class="c-localav__english">ENGLISH</div>
+                                        <div class="c-localav__text">ダミーテキスト</div>
+                                        <div class="c-localav__arrow">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M6 4L10 8L6 12" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="c-localav__item">
+                                        <div class="c-localav__english">ENGLISH</div>
+                                        <div class="c-localav__text">ダミーテキスト</div>
+                                        <div class="c-localav__arrow">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M6 4L10 8L6 12" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-localav__row">
+                                    <div class="c-localav__item">
+                                        <div class="c-localav__english">ENGLISH</div>
+                                        <div class="c-localav__text">ダミーテキスト</div>
+                                        <div class="c-localav__arrow">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M6 4L10 8L6 12" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="c-localav__item">
+                                        <div class="c-localav__english">ENGLISH</div>
+                                        <div class="c-localav__text">ダミーテキスト</div>
+                                        <div class="c-localav__arrow">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M6 4L10 8L6 12" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="c-localav__item">
+                                        <div class="c-localav__english">ENGLISH</div>
+                                        <div class="c-localav__text">ダミーテキスト</div>
+                                        <div class="c-localav__arrow">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M6 4L10 8L6 12" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- 📝 コンテンツ表示系 -->
+        <section class="ds-category">
+            <h1 class="ds-category__title">📝 コンテンツ表示系</h1>
+
+            <!-- Text Components -->
+            <section class="ds-section" id="text-components">
+                <h2 class="ds-section__title">Text Components</h2>
+
+                <!-- c-paragraph -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">c-paragraph</h3>
+                    <div class="ds-component__preview">
+                        <p class="c-paragraph">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Card Components -->
+            <section class="ds-section" id="card-components">
+                <h2 class="ds-section__title">Card Components</h2>
+
+                <!-- card/c-card -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">card/c-card</h3>
+                    <div class="ds-component__preview">
+                        <div class="c-card">
+                            <div class="c-card__image">
+                                <div class="c-card__img"></div>
+                            </div>
+                            <div class="c-card__content">
+                                <div class="c-card__main">
+                                    <div class="c-card__tags">
+                                        <span class="c-tag">テキスト</span>
+                                        <span class="c-tag">テキスト</span>
+                                    </div>
+                                    <h3 class="c-card__title">ダミーダミー</h3>
+                                    <p class="c-card__description">ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。</p>
+                                </div>
+                                <div class="c-card__action">
+                                    <button class="c-text-btn">
+                                        <span class="c-text-btn__text">ボタン</span>
+                                        <div class="c-text-btn__icon">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M6 4L10 8L6 12" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card/c-info-card -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">card/c-info-card</h3>
+                    <div class="ds-component__preview">
+                        <div class="c-info-card">
+                            <div class="c-info-card__header">
+                                <div class="c-info-card__avatar">
+                                    <img src="https://via.placeholder.com/70x70/d9d9d9" alt="" class="c-info-card__img">
+                                </div>
+                                <h3 class="c-info-card__title">見出しテキストが入ります見出しテキストが入ります</h3>
+                            </div>
+                            <p class="c-info-card__description">ダミーテキストですダミーテキストですダミーテキストですダミーテキストですダミーテキストですダミーテキストですダミーテキストですダミーテキストですダミーテキストですダミーテキストですダミーテキストですダミーテキストです</p>
+                            <button class="c-round-ghost-btn c-round-ghost-btn--link">
+                                <span class="c-round-ghost-btn__text">ダミーテキスト</span>
+                                <div class="c-round-ghost-btn__icon">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                        <path d="M9 3L3 9M9 3H5M9 3V7" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card/c-summary-card -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">card/c-summary-card</h3>
+                    <div class="ds-component__preview">
+                        <div class="c-summary-card">
+                            <div class="c-summary-card__content">
+                                <h3 class="c-summary-card__title">サマリーカードタイトル</h3>
+                                <p class="c-summary-card__description">サマリーカードの説明テキストが入ります。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Text Card Components -->
+            <section class="ds-section" id="text-card-components">
+                <h2 class="ds-section__title">Text Card Components</h2>
+
+                <!-- c-text-card -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">c-text-card</h3>
+                    <div class="ds-component__preview">
+                        <div class="c-text-card">
+                            <div class="c-text-card__content">
+                                <div class="c-text-card__header">
+                                    <h3 class="c-text-card__title">見出しテキスト</h3>
+                                </div>
+                                <div class="c-text-card__description">
+                                    <p>ダミーテキストですダミーテキストですダミーテキストですダミーテキストですダミーテキストですダミーテキストですダミーテキストです</p>
+                                </div>
+                            </div>
+                            <div class="c-text-card__highlight">
+                                <ul class="c-text-card__list">
+                                    <li class="c-text-card__list-item">16px_テキストが入ります</li>
+                                    <li class="c-text-card__list-item">16px_テキストが入ります</li>
+                                    <li class="c-text-card__list-item">16px_テキストが入ります</li>
+                                    <li class="c-text-card__list-item">16px_テキストが入ります</li>
+                                    <li class="c-text-card__list-item">16px_テキストが入ります</li>
+                                    <li class="c-text-card__list-item">16px_テキストが入ります</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Info Step Components -->
+            <section class="ds-section">
+                <h2 class="ds-section__title">Info Step Components</h2>
+
+                <!-- c-info-step -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">c-info-step</h3>
+                    <div class="ds-component__preview">
+                        <div class="c-info-step">
+                            <div class="c-info-step__header">
+                                <h2 class="c-heading c-heading--large">ダイバーシティ&インクルージョン</h2>
+                            </div>
+                            <div class="c-info-step__content">
+                                <div class="c-info-step__text">
+                                    <div class="c-info-step__title">
+                                        <h3 class="c-heading c-heading--medium">キャッチコピー＆キャラクター決定</h3>
+                                    </div>
+                                    <div class="c-info-step__description">
+                                        <p class="c-paragraph">ダミーテキストですダミーテキストですダミーテキストですダミーテキストですダミーテキストですダミーテキストですダミーテキストですダミーテキストですダミーテキストですダミーテキストですダミーテキストですダミーテキストですダミーテキストです。ダミーテキストです。</p>
+                                        <div class="c-info-step__note">
+                                            <span class="c-info-step__note-mark">※</span>
+                                            <span class="c-info-step__note-text">職種ごとにエントリーをお願いいたします。</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-info-step__image">
+                                    <div class="c-info-step__img"></div>
+                                    <div class="c-info-step__dummy">ダミー</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- c-track-history -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">c-track-history (日付あり)</h3>
+                    <div class="ds-component__preview">
+                        <div class="c-track-history">
+                            <div class="c-track-history__date">
+                                <div class="c-track-history__year">2024</div>
+                                <div class="c-track-history__month-day">03.15</div>
+                            </div>
+                            <div class="c-track-history__content">
+                                <div class="c-track-history__indicator">
+                                    <div class="c-track-history__dot"></div>
+                                </div>
+                                <div class="c-track-history__line"></div>
+                                <div class="c-track-history__text">
+                                    <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+                                </div>
+                                <div class="c-track-history__vertical-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- c-track-history (デフォルト) -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">c-track-history (デフォルト)</h3>
+                    <div class="ds-component__preview">
+                        <div class="c-track-history">
+                            <div class="c-track-history__date">
+                                <div class="c-track-history__year">2024</div>
+                            </div>
+                            <div class="c-track-history__content">
+                                <div class="c-track-history__indicator">
+                                    <div class="c-track-history__dot"></div>
+                                </div>
+                                <div class="c-track-history__line"></div>
+                                <div class="c-track-history__text">
+                                    <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+                                </div>
+                                <div class="c-track-history__vertical-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- c-image-text-profile -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">c-image-text-profile</h3>
+                    <div class="ds-component__preview">
+                        <div class="c-image-text-profile">
+                            <div class="c-image-text-profile__header">
+                                <div class="c-hgroup">
+                                    <div class="c-hgroup__english">English</div>
+                                    <div class="c-hgroup__main">
+                                        <h2 class="c-hgroup__title">日本語見出し</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c-image-text-profile__content">
+                                <div class="c-image-text-profile__image">
+                                    <div class="c-image-text-profile__img"></div>
+                                </div>
+                                <div class="c-image-text-profile__text">
+                                    <div class="c-image-text-profile__heading">
+                                        <h3 class="c-heading c-heading--x2l">見出しテキストが入ります</h3>
+                                    </div>
+                                    <div class="c-image-text-profile__description">
+                                        <p class="c-paragraph">16px_この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+                                        <p class="c-paragraph">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+                                        <p class="c-paragraph">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+                                    </div>
+                                    <div class="c-image-text-profile__signature">
+                                        <div class="c-image-text-profile__signature-text">
+                                            <p>〇〇株式会社</p>
+                                            <p>代表取締役社長</p>
+                                        </div>
+                                        <div class="c-image-text-profile__signature-img"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- c-point-card -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">c-point-card</h3>
+                    <div class="ds-component__preview">
+                        <div class="c-point-card">
+                            <div class="c-point-card__label">
+                                <p>POINT</p>
+                            </div>
+                            <div class="c-point-card__content">
+                                <div class="c-point-card__divider"></div>
+                                <div class="c-point-card__list">
+                                    <div class="c-point-card__item">
+                                        <div class="c-point-card__check"></div>
+                                        <div class="c-point-card__text">
+                                            <p>16px_テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                                        </div>
+                                    </div>
+                                    <div class="c-point-card__item">
+                                        <div class="c-point-card__check"></div>
+                                        <div class="c-point-card__text">
+                                            <p>16px_テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                                        </div>
+                                    </div>
+                                    <div class="c-point-card__item">
+                                        <div class="c-point-card__check"></div>
+                                        <div class="c-point-card__text">
+                                            <p>16px_テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Table Components -->
+            <section class="ds-section" id="table-components">
+                <h2 class="ds-section__title">Table Components</h2>
+
+                <!-- c-fullborder-table -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">c-fullborder-table</h3>
+                    <div class="ds-component__preview">
+                        <table class="c-fullborder-table">
+                            <thead class="c-fullborder-table__head">
+                                <tr class="c-fullborder-table__row">
+                                    <th class="c-fullborder-table__header">項目</th>
+                                    <th class="c-fullborder-table__header">内容</th>
+                                    <th class="c-fullborder-table__header">備考</th>
+                                </tr>
+                            </thead>
+                            <tbody class="c-fullborder-table__body">
+                                <tr class="c-fullborder-table__row">
+                                    <td class="c-fullborder-table__data">
+                                        <p class="c-fullborder-table__text">見出し</p>
+                                    </td>
+                                    <td class="c-fullborder-table__data">
+                                        <p class="c-fullborder-table__text">テキストが入ります</p>
+                                    </td>
+                                    <td class="c-fullborder-table__data">
+                                        <p class="c-fullborder-table__text">-</p>
+                                    </td>
+                                </tr>
+                                <tr class="c-fullborder-table__row">
+                                    <td class="c-fullborder-table__data">
+                                        <p class="c-fullborder-table__text">見出し見出し見出し見出し見出し</p>
+                                    </td>
+                                    <td class="c-fullborder-table__data">
+                                        <p class="c-fullborder-table__text">テキストが入ります</p>
+                                    </td>
+                                    <td class="c-fullborder-table__data">
+                                        <p class="c-fullborder-table__text">重要</p>
+                                    </td>
+                                </tr>
+                                <tr class="c-fullborder-table__row">
+                                    <td class="c-fullborder-table__data">
+                                        <p class="c-fullborder-table__text">見出し</p>
+                                    </td>
+                                    <td class="c-fullborder-table__data">
+                                        <p class="c-fullborder-table__text">ダミーテキストダミーテキストダミーテキスト</p>
+                                    </td>
+                                    <td class="c-fullborder-table__data">
+                                        <p class="c-fullborder-table__text">-</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- table/c-custom-description-table -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">table/c-custom-description-table</h3>
+                    <div class="ds-component__preview">
+                        <table class="c-description-table">
+                            <tbody class="c-description-table__body">
+                                <tr class="c-description-table__row">
+                                    <th class="c-description-table__header">見出し</th>
+                                    <td class="c-description-table__data">
+                                        <p class="c-description-table__text">ダミーテキスト</p>
+                                    </td>
+                                </tr>
+                                <tr class="c-description-table__row">
+                                    <th class="c-description-table__header">見出し見出し見出し見出し見出し</th>
+                                    <td class="c-description-table__data">
+                                        <p class="c-description-table__text">ダミーテキスト</p>
+                                    </td>
+                                </tr>
+                                <tr class="c-description-table__row">
+                                    <th class="c-description-table__header">見出し</th>
+                                    <td class="c-description-table__data">
+                                        <p class="c-description-table__text">ダミーテキストダミーテキスト<span class="c-text-link">テキストリンク</span>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                                        <button class="c-text-btn">
+                                            <span class="c-text-btn__text">ボタン</span>
+                                            <div class="c-text-btn__icon">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M9 3L3 9M9 3H5M9 3V7" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- List Components -->
+            <section class="ds-section" id="list-components">
+                <h2 class="ds-section__title">List Components</h2>
+
+                <!-- c-disc-list -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">c-disc-list</h3>
+                    <div class="ds-component__preview">
+                        <ul class="c-disc-list">
+                            <li class="c-disc-list__item">リストアイテム</li>
+                            <li class="c-disc-list__item">リストアイテム</li>
+                            <li class="c-disc-list__item">リストアイテム</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- c-decimal-list -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">c-decimal-list</h3>
+                    <div class="ds-component__preview">
+                        <ol class="c-decimal-list">
+                            <li class="c-decimal-list__item">リストアイテム</li>
+                            <li class="c-decimal-list__item">リストアイテム</li>
+                            <li class="c-decimal-list__item">リストアイテム</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- c-set-half -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">c-set-half</h3>
+                    <div class="ds-component__preview">
+                        <div class="c-set-half">
+                            <div class="c-set-half__content">
+                                <div class="c-set-half__title">
+                                    <h3 class="c-heading c-heading--x4l">見出しテキストが入ります</h3>
+                                </div>
+                                <div class="c-set-half__text">
+                                    <p>ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。</p>
+                                </div>
+                                <div class="c-set-half__button">
+                                    <button class="c-text-btn">
+                                        <span class="c-text-btn__text">ボタン</span>
+                                        <span class="c-text-btn__icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="c-set-half__image">
+                                <div class="c-set-half__image-placeholder"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- c-overlap-set -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">c-overlap-set</h3>
+                    <div class="ds-component__preview">
+                        <div class="c-overlap-set">
+                            <div class="c-overlap-set__background">
+                                <div class="c-overlap-set__image-placeholder"></div>
+                            </div>
+                            <div class="c-overlap-set__content">
+                                <div class="c-overlap-set__title">
+                                    <h2 class="c-heading c-heading--x5l">見出しテキストが入ります</h2>
+                                </div>
+                                <div class="c-overlap-set__text">
+                                    <p>ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- c-set-vertical -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">c-set-vertical</h3>
+                    <div class="ds-component__preview">
+                        <div class="c-set-vertical">
+                            <div class="c-set-vertical__content">
+                                <div class="c-set-vertical__text-content">
+                                    <div class="c-set-vertical__title">
+                                        <h2 class="c-heading c-heading--x5l">見出しテキストが入ります</h2>
+                                    </div>
+                                    <div class="c-set-vertical__text">
+                                        <p>ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。</p>
+                                    </div>
+                                </div>
+                                <div class="c-set-vertical__images">
+                                    <div class="c-set-vertical__image">
+                                        <div class="c-set-vertical__image-placeholder"></div>
+                                    </div>
+                                    <div class="c-set-vertical__image">
+                                        <div class="c-set-vertical__image-placeholder"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- c-summary-card -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">c-summary-card</h3>
+                    <div class="ds-component__preview">
+                        <div class="c-summary-card">
+                            <div class="c-summary-card__header">
+                                <div class="c-hgroup">
+                                    <div class="c-hgroup__english">English</div>
+                                    <div class="c-hgroup__main">
+                                        <h1 class="c-hgroup__title c-hgroup__title--xl">ミッション</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c-summary-card__content">
+                                <div class="c-summary-card__text-content">
+                                    <div class="c-summary-card__title">
+                                        <h3 class="c-heading c-heading--x2l">見出しテキストが入ります</h3>
+                                    </div>
+                                    <div class="c-summary-card__text">
+                                        <p>ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。</p>
+                                    </div>
+                                    <div class="c-summary-card__button">
+                                        <button class="c-text-btn c-text-btn--small">
+                                            <span class="c-text-btn__text">ボタン</span>
+                                            <span class="c-text-btn__icon c-text-btn__icon--small"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <!-- 🎯 インタラクション系 -->
+        <section class="ds-category">
+            <h1 class="ds-category__title">🎯 インタラクション系</h1>
+
+            <!-- Button Components -->
+            <section class="ds-section" id="button-components">
+                <h2 class="ds-section__title">Button Components</h2>
+
+                <!-- c-subtext-btn -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">c-subtext-btn</h3>
+                    <div class="ds-component__preview">
+                        <button class="c-subtext-btn c-subtext-btn--round-border">
+                            <div class="c-subtext-btn__content">
+                                <div class="c-subtext-btn__text">テキスト</div>
+                                <div class="c-subtext-btn__subtext">サブテキスト</div>
+                            </div>
+                            <div class="c-subtext-btn__arrow">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6 4L10 8L6 12" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- btn/c-round-ghost-btn -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">btn/c-round-ghost-btn</h3>
+                    <div class="ds-component__preview">
+                        <button class="c-round-ghost-btn c-round-ghost-btn--default">
+                            <span class="c-round-ghost-btn__text">テキスト</span>
+                            <div class="c-round-ghost-btn__arrow">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6 4L10 8L6 12" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </button>
+
+                        <button class="c-round-ghost-btn c-round-ghost-btn--reverse">
+                            <div class="c-round-ghost-btn__arrow c-round-ghost-btn__arrow--left">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M10 4L6 8L10 12" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <span class="c-round-ghost-btn__text">テキスト</span>
+                        </button>
+
+                        <button class="c-round-ghost-btn c-round-ghost-btn--icon-small">
+                            <div class="c-round-ghost-btn__icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M3.33333 6.66667H16.6667L15 5M3.33333 6.66667L5 5M3.33333 6.66667V15C3.33333 15.442 3.50893 15.866 3.82149 16.1785C4.13405 16.4911 4.55797 16.6667 5 16.6667H15C15.442 16.6667 15.866 16.4911 16.1785 16.1785C16.5911 15.866 16.6667 15.442 16.6667 15V6.66667M8.33333 10H11.6667" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <span class="c-round-ghost-btn__text">テキスト</span>
+                            <div class="c-round-ghost-btn__arrow">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6 4L10 8L6 12" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Components -->
+            <section class="ds-section" id="faq-components">
+                <h2 class="ds-section__title">FAQ Components</h2>
+
+                <!-- c-framed-faq -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">c-framed-faq</h3>
+                    <div class="ds-component__preview">
+                        <div class="c-framed-faq">
+                            <div class="c-framed-faq__item" data-state="open">
+                                <div class="c-framed-faq__question">
+                                    <div class="c-framed-faq__q-header">
+                                        <div class="c-framed-faq__icon c-framed-faq__icon--question">
+                                            <span class="c-framed-faq__icon-text">Q</span>
+                                        </div>
+                                        <div class="c-framed-faq__question-text">
+                                            <p>見出しテキストが入ります見出しテキストが入ります見出しテキストが入ります</p>
+                                        </div>
+                                        <div class="c-framed-faq__toggle">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M6 9L12 15L18 9" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-framed-faq__answer">
+                                    <div class="c-framed-faq__a-content">
+                                        <div class="c-framed-faq__icon c-framed-faq__icon--answer">
+                                            <span class="c-framed-faq__icon-text">A</span>
+                                        </div>
+                                        <div class="c-framed-faq__answer-content">
+                                            <p class="c-framed-faq__answer-text">
+                                                私たちは常に「お客様の立場に立って」物事を考え、真のニーズをくみ取ることを大切にしています。サーバー導入の目的や業務上の課題、将来的な展望などを細やかにヒアリングし、最先端の技術や製品を積極的に取り入れながら、お客様の理想を形にするソリューションを追求してまいります。その結果、多くのお客様から「要望を正確に理解してくれる」「未来を見据えた提案を受けられる」など高い評価をいただいており、今後も継続的な信頼関係の構築を目指します。
+                                            </p>
+                                            <div class="c-framed-faq__link">
+                                                <button class="c-round-ghost-btn">
+                                                    <span class="c-round-ghost-btn__text">テキスト</span>
+                                                    <div class="c-round-ghost-btn__arrow">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                            <path d="M6 4L10 8L6 12" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- c-framed-faq (closed state) -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">c-framed-faq (closed state)</h3>
+                    <div class="ds-component__preview">
+                        <div class="c-framed-faq">
+                            <div class="c-framed-faq__item" data-state="closed">
+                                <div class="c-framed-faq__question">
+                                    <div class="c-framed-faq__q-header">
+                                        <div class="c-framed-faq__icon c-framed-faq__icon--question">
+                                            <span class="c-framed-faq__icon-text">Q</span>
+                                        </div>
+                                        <div class="c-framed-faq__question-text">
+                                            <p>見出しテキストが入ります見出しテキストが入ります見出しテキストが入ります</p>
+                                        </div>
+                                        <div class="c-framed-faq__toggle">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M6 9L12 15L18 9" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-framed-faq__answer">
+                                    <div class="c-framed-faq__a-content">
+                                        <div class="c-framed-faq__icon c-framed-faq__icon--answer">
+                                            <span class="c-framed-faq__icon-text">A</span>
+                                        </div>
+                                        <div class="c-framed-faq__answer-content">
+                                            <p class="c-framed-faq__answer-text">
+                                                FAQ の回答テキストがここに表示されます。詳細な説明や解決策を記載してください。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step Components -->
+            <section class="ds-section" id="step-components">
+                <h2 class="ds-section__title">Step Components</h2>
+
+                <!-- c-vertical-step -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">c-vertical-step</h3>
+                    <div class="ds-component__preview">
+                        <div class="c-vertical-step">
+                            <div class="c-vertical-step__item">
+                                <div class="c-vertical-step__content">
+                                    <div class="c-vertical-step__icon">
+                                        <div class="c-vertical-step__icon-placeholder"></div>
+                                    </div>
+                                    <div class="c-vertical-step__text-content">
+                                        <div class="c-vertical-step__header">
+                                            <div class="c-vertical-step__number">01. </div>
+                                            <div class="c-vertical-step__title">
+                                                <h3>テキストテキストテキスト</h3>
+                                            </div>
+                                        </div>
+                                        <div class="c-vertical-step__description">
+                                            <p>掲載希望の商品をお伺いしたのち、ご提案・見積をお送りします。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-vertical-step__arrow">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                        <path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- c-vertical-step Multiple Steps -->
+                <div class="ds-component">
+                    <h3 class="ds-component__name">c-vertical-step (Multiple Steps)</h3>
+                    <div class="ds-component__preview">
+                        <div class="c-step-group">
+                            <div class="c-vertical-step">
+                                <div class="c-vertical-step__item">
+                                    <div class="c-vertical-step__content">
+                                        <div class="c-vertical-step__icon">
+                                            <div class="c-vertical-step__icon-placeholder"></div>
+                                        </div>
+                                        <div class="c-vertical-step__text-content">
+                                            <div class="c-vertical-step__header">
+                                                <div class="c-vertical-step__number">01. </div>
+                                                <div class="c-vertical-step__title">
+                                                    <h3>ご相談・お問い合わせ</h3>
+                                                </div>
+                                            </div>
+                                            <div class="c-vertical-step__description">
+                                                <p>まずはお気軽にお問い合わせください。ご要望をお聞かせいただき、最適なプランをご提案いたします。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-vertical-step__arrow">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                            <path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c-vertical-step">
+                                <div class="c-vertical-step__item">
+                                    <div class="c-vertical-step__content">
+                                        <div class="c-vertical-step__icon">
+                                            <div class="c-vertical-step__icon-placeholder"></div>
+                                        </div>
+                                        <div class="c-vertical-step__text-content">
+                                            <div class="c-vertical-step__header">
+                                                <div class="c-vertical-step__number">02. </div>
+                                                <div class="c-vertical-step__title">
+                                                    <h3>企画・設計</h3>
+                                                </div>
+                                            </div>
+                                            <div class="c-vertical-step__description">
+                                                <p>お客様のニーズを基に、詳細な企画・設計を行います。機能要件や技術仕様を明確にし、開発計画を策定します。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-vertical-step__arrow">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                            <path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c-vertical-step">
+                                <div class="c-vertical-step__item">
+                                    <div class="c-vertical-step__content">
+                                        <div class="c-vertical-step__icon">
+                                            <div class="c-vertical-step__icon-placeholder"></div>
+                                        </div>
+                                        <div class="c-vertical-step__text-content">
+                                            <div class="c-vertical-step__header">
+                                                <div class="c-vertical-step__number">03. </div>
+                                                <div class="c-vertical-step__title">
+                                                    <h3>開発・納品</h3>
+                                                </div>
+                                            </div>
+                                            <div class="c-vertical-step__description">
+                                                <p>設計に基づいて開発を進め、品質チェックを経て納品いたします。アフターサポートも充実しています。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </div>
+</body>
+</html>
