@@ -158,7 +158,7 @@
 
 以下は、README.mdの「今後の拡張案」から移行した項目です：
 
-> 📘 **詳細仕様**: IMP-005の詳細な技術仕様と実装計画は [IMPROVEMENTS_DETAIL.md](./IMPROVEMENTS_DETAIL.md) を参照してください。
+> 📘 **詳細仕様**: IMP-005, IMP-007, IMP-008, IMP-011の詳細な技術仕様と実装計画は [IMPROVEMENTS_DETAIL.md](./IMPROVEMENTS_DETAIL.md) を参照してください。
 
 ### レイアウト機能
 
@@ -178,16 +178,16 @@
 
 | ID | 優先度 | 概要 | 提案日 | ステータス | 備考 |
 |----|--------|------|--------|------------|------|
-| IMP-007 | Low | JSON形式での構成データエクスポート | - | 🔴 未対応 | APIとの連携を想定 |
-| IMP-008 | Low | 他デザインツールとの連携（Sketch、Adobe XD） | - | 🔴 未対応 | - |
+| IMP-007 | Low | JSON形式での構成データエクスポート | - | 🔴 未対応 | APIとの連携を想定。[詳細](./IMPROVEMENTS_DETAIL.md#imp-007-json形式での構成データエクスポート) |
+| IMP-008 | Low | 他デザインツールとの連携（Sketch、Adobe XD） | - | 🔴 未対応 | [詳細](./IMPROVEMENTS_DETAIL.md#imp-008-他デザインツールとの連携sketchadobe-xd) |
 
 ### 開発環境
 
 | ID | 優先度 | 概要 | 提案日 | ステータス | 備考 |
 |----|--------|------|--------|------------|------|
-| IMP-009 | Medium | ユニットテストの追加 | - | 🔴 未対応 | Jest等の導入 |
+| IMP-009 | Medium | ユニットテストの追加 | - | 🔴 未対応 | Jest等の導入。IMP-011に含まれる |
 | IMP-010 | Medium | E2Eテストの追加 | - | 🔴 未対応 | Playwright等の導入 |
-| IMP-011 | Low | CI/CDパイプラインの構築 | - | 🔴 未対応 | GitHub Actions |
+| IMP-011 | Low | CI/CDパイプラインの構築 | - | 🔴 未対応 | GitHub Actions。[詳細](./IMPROVEMENTS_DETAIL.md#imp-011-cicdパイプラインの構築) |
 
 ---
 
