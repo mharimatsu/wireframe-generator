@@ -259,6 +259,7 @@ const detailedWireframe = generator.generateWireframe(`
 - [ ] より詳細なコンポーネントバリエーション
 - [ ] JSON形式での構成データエクスポート
 - [ ] 他のデザインツール（Sketch、Adobe XD）との連携
+- [ ] これまで作成したワイヤーフレームをマッピングの参照情報として、マッピングの精度を上げる
 
 ## 🔗 関連技術
 
