@@ -20,13 +20,17 @@ Figma Dev Mode MCPから取得したデザインシステムコンポーネン�
 ```
 design-system03/
 ├── components/
-│   └── components.html          # Figmaコンポーネントライブラリ
+│   └── components.html               # Figmaコンポーネントライブラリ
 ├── styles/
-│   └── components.css           # 統一されたCSSスタイル
+│   └── components.css                # 統一されたCSSスタイル
 ├── js/
-│   └── wireframe-generator.js   # ワイヤーフレーム自動生成エンジン
-├── wireframe-demo.html          # デモ・使用例ページ
-└── README.md                    # このファイル
+│   └── wireframe-generator.js        # ワイヤーフレーム自動生成エンジン
+├── wireframe-demo.html               # デモ・使用例ページ
+├── README.md                         # このファイル
+├── IMPROVEMENTS.md                   # 機能改善項目リスト
+├── IMPROVEMENTS_DETAIL.md            # 機能改善項目詳細仕様書
+├── COMPONENT_MAPPING_RULES.md        # コンポーネントマッピングルール
+└── AI_MAPPING_PROMPT.md              # AIマッピングプロンプト
 ```
 
 ## 🚀 使用方法
@@ -251,7 +255,11 @@ const detailedWireframe = generator.generateWireframe(`
 4. **保守性**: BEM + CSS Custom Propertiesで管理しやすい
 5. **再利用性**: コンポーネントライブラリとして活用可能
 
-## 📋 今後の拡張案
+## 📋 機能改善・拡張
+
+システムを活用する中で発見された機能改善項目は [IMPROVEMENTS.md](./IMPROVEMENTS.md) で管理しています。
+
+### 主な改善予定項目
 
 - [ ] より複雑なレイアウトパターンの対応
 - [ ] インタラクティブ要素の追加
@@ -259,6 +267,8 @@ const detailedWireframe = generator.generateWireframe(`
 - [ ] より詳細なコンポーネントバリエーション
 - [ ] JSON形式での構成データエクスポート
 - [ ] 他のデザインツール（Sketch、Adobe XD）との連携
+
+詳細は [IMPROVEMENTS.md](./IMPROVEMENTS.md) をご覧ください。
 
 ## 🔗 関連技術
 
